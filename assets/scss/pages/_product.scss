@@ -1,0 +1,259 @@
+.info-tabs {
+  border-bottom: 1px solid $buttongrey;
+
+  .nav-link {
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: $notblack;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 1rem;
+
+    &.active {
+      font-weight: bold;
+      color: $notblack;
+      background-color: $buttongrey;
+      border-color: $buttongrey;
+    }
+
+    &:hover {
+      border-color: $buttongrey;
+    }
+
+    @include media-breakpoint-down(md) {
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+      width: 100%;
+      border: 2px solid $buttongrey;
+      margin: 0 auto;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    padding-right: 0;
+  }
+}
+
+.section-product-single {
+  .tab-content {
+    background-color: $buttongrey;
+
+    .tab-pane {
+      @include media-breakpoint-up(sm) {
+        margin-left: calc((100% - 540px)/2);
+        margin-right: calc((100% - 540px)/2);
+      }
+
+      @include media-breakpoint-up(md) {
+        margin-left: calc((100% - 720px)/2);
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin-left: calc((100% - 960px)/2);
+        width: 50%;
+      }
+
+      @include media-breakpoint-up(xl) {
+        margin-left: calc((100% - 1140px)/2);
+        width: 30%;
+      }
+      padding: 15px;
+
+      &#nav-feed {
+        width: 100%;
+        @include media-breakpoint-up(sm) {
+          width: 70%;
+        }
+      }
+
+      &.active {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+    }
+  }
+}
+// @media (min-width: 1400px) {
+//   .section-product-single .tab-content .tab-pane {
+//     margin-left: calc((100% - 1300px)/2);
+//     width: 30%;
+//   }
+// }
+.img-container {
+  margin-bottom: 5rem;
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 3rem;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1rem;
+  color: $notblack;
+}
+
+.product-content,
+.table-shopping-cart {
+  .form-control {
+    @include greyformcontrol();
+    font-size: 18px;
+  }
+
+}
+
+.reference {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  color: $darkergrey;
+  margin-bottom: 1em;
+}
+
+.short-desc {
+  font-weight: normal;
+  line-height: 160%;
+  letter-spacing: -0.02em;
+  color: $black;
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
+
+
+}
+.price-old {
+  display: block;
+}
+.old-price {
+  text-decoration: line-through;
+  margin-right: 1rem;
+  display: block;
+}
+
+.discount {
+
+  &.res-circle {
+    position: relative;
+    background-color: $primary;
+    color: $white;
+    width: 20%;
+    margin-left: 1rem;
+    border-radius: 50%;
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+  }
+
+    .circle-txt {
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: -0.04em;
+      position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    }
+  }
+}
+
+.wishlist-btn {
+  margin-left: -.75rem;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: $notblack;
+  margin-bottom: 1rem;
+
+  &.btn {
+    font-weight: 500;
+  }
+
+  @include on-event {
+    text-decoration: none;
+  }
+
+  .wishlist-icon {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.5rem;
+    color: $primary;
+    margin-right: 1rem;
+
+    &:before {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 400;
+      content: "\f004";
+    }
+  }
+
+  &.added {
+    .wishlist-icon {
+      &:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f004";
+      }
+    }
+  }
+}
+.heading-success {
+  color: $success;
+  font-weight: bold;
+font-size: 30px;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+
+}
+.related-products {
+  .swiper-wrapper {
+    margin-bottom: 5rem;
+  }
+  .product-price {
+    margin-bottom: 1rem;
+  }
+  @include media-breakpoint-up(lg) {
+    .btn-add-to-cart {
+      position: absolute;
+      bottom: -1.5em;
+      opacity: 0;
+    }
+.product-card {
+    @include on-event {
+      .btn-add-to-cart {
+        animation: fade-in 1.2s cubic-bezier(.39, .575, .565, 1.000) both;
+        opacity: 1;
+      }
+    }
+  }
+  }
+}

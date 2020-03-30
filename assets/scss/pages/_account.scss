@@ -1,0 +1,109 @@
+.orders-info {
+  margin-bottom: 3rem;
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+
+    >.col-lg {
+      margin: 1rem 0;
+    }
+
+  }
+
+  >:nth-child(even) {
+    background-color: $grey;
+    border-radius: $border-radius;
+  }
+
+  a {
+    color: $black;
+    font-weight: 500;
+
+    @include on-event {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+}
+
+.head-row {
+  font-weight: 500;
+  align-items: center;
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+.account-page {
+  h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: $black;
+    margin-bottom: 1em;
+  }
+}
+
+.account-menu {
+  @include media-breakpoint-down(sm) {
+    margin-top: 3rem;
+  }
+  .list-group-item {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.04em;
+    color: $notblack;
+    border: none;
+    padding: 0.75rem 0;
+&.active {
+    background-color: transparent;
+    font-weight: bold;
+}
+&:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+&:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+    @include on-event {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+}
+.form-spacer {
+    [class*="col-"] {
+ margin-bottom: 2rem;
+    }
+}
+.flex-reverse-md {
+    @include media-breakpoint-down(md) {
+        flex-direction: column-reverse;
+      }
+}
+.flex-reverse-sm {
+  @include media-breakpoint-down(sm) {
+      flex-direction: column-reverse;
+    }
+}
+.title-25 {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: $notblack;
+  margin-bottom: 2em;
+}
+.b2bAddress {
+  display: none;
+}
+.title-20 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: -0.02em;
+  margin-bottom: 1em;
+}

@@ -1,0 +1,43 @@
+---
+layout: default
+title: Cart Payment
+---
+<section class="section-cart py-5">
+  <div class="container">
+
+    <div class="row">
+      <main class="col">
+        {{> cart-nav}} 
+        <div class="row justify-content-around">
+
+             <div class="col-md-6 payment-method">
+                <div class="custom-control custom-radio payment-radio">
+                    <input type="radio" id="customRadio1" name="addressRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">
+                        <h2 class="payment-title">Paysera</h2>
+                       <div class="payment-details">
+                        Apmokėjimas internetu Jums patogiu būdu.  
+                        SWEDBANK, SEB, DNB ir kiti bankai.
+                       </div>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6 payment-method">
+                <div class="custom-control custom-radio payment-radio">
+                    <input type="radio" id="customRadio2" name="addressRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">
+                        <h2 class="payment-title">Bankinis pavedimas</h2>
+                       <div class="payment-details">
+                        Atkreipkite dėmesį, kad mokėjimo paskirties laukelyje reikia būtinai nurodyti evet.lt užsakymo numerį.
+                       </div>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+        {{> cart-total}} 
+      </main>
+    </div>
+    {{> cart-footer}} 
+  </div>
+</section>

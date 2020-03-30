@@ -1,0 +1,89 @@
+---
+layout: default
+title: Blog
+---
+<section class="container spacer">
+  <div class="row mx-0 top-header">
+    <div class="col-md-6 header-image">
+      <a href="article.html" title="..." >
+        <img 
+          class="img-fluid"
+          src="{{root}}assets/img/blog.png"        
+          alt="I'm an image!" >  
+        </a>
+    </div>
+    <div class="col-md-6 header-text d-flex">
+      <div class="header-text-inner m-auto">
+        <span class="posts--cat">Naujausias įrašas</span>
+        <h1 class="posts--title mt-3">Patikimas augintinių šeimininkų partneris</h1>
+        <div class="posts--desc">
+          <a href="article.html" title="..." class="btn btn-default">Skaityti</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row align-items-center blog-nav ml-md-3">
+      <h2 class="title-20 mb-0">Kategorijos:</h2>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link btn btn-light" href="blog-category.html">Sveikatai</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-light" href="blog-category.html">Mityba ir priežiūra</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link btn btn-light" href="blog-category.html">Laisvalaikis</a>
+          </li>
+      </ul>
+  </div>
+  <div class="spacer">
+    <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto">
+            <div class="article-list row">
+                <article class="col-md-6">
+                    <a href="article.html" title="..." class="article-list-item">
+                      <img 
+                      class="img-fluid lazy"
+                      src="{{root}}assets/img/blog.png"        
+                      alt="I'm an image!" >        
+                      <!-- <div class="article-meta">
+                        <span class="article-date">June 16, 2019</span>
+                      </div> -->
+                      <h3 class="article-title">Eyewear frames material: how to choose?</h3>
+                    </a>  
+                    <a href="blog-category.html" class="posts--cat btn-light btn">Mityba ir priežiūra</a>          
+                  </article>
+                  <article class="col-md-6">
+                    <a href="article.html" title="..." class="article-list-item">
+                      <img src="{{root}}assets/img/blog.png" alt="..." class="img-fluid lazy">
+                      <h3 class="article-title">Lens technologies that we use Lens technologies that we use</h3>
+                    </a>
+                    <a href="blog-category.html" class="posts--cat btn-light btn">Sveikatai</a>
+                  </article>
+                  <article class="col-md-6">
+                    <a href="article.html" title="..." class="article-list-item">
+                      <img src="{{root}}assets/img/blog.png" alt="..." class="img-fluid lazy">
+                      <h3 class="article-title">Lens technologies that we use</h3>
+                    </a>
+                    <a href="blog-category.html" class="posts--cat btn-light btn">Sveikatai</a>
+                  </article>
+                  <article class="col-md-6">
+                    <a href="article.html" title="..." class="article-list-item">
+                      <img src="{{root}}assets/img/blog.png" alt="..." class="img-fluid lazy">
+                      <h3 class="article-title">Patikimas augintinių šeimininkų partneris</h3>
+                    </a>
+                    <a href="blog-category.html" class="posts--cat btn-light btn">Sveikatai</a>
+                  </article>
+                  <article class="col-md-6">
+                    <a href="article.html" title="..." class="article-list-item">
+                      <img src="{{root}}assets/img/blog.png" alt="..." class="img-fluid lazy">
+                      <h3 class="article-title">Lens technologies that we use</h3>
+                    </a>
+                    <a href="blog-category.html" class="posts--cat btn-light btn">Sveikatai</a>
+                  </article>
+            </div>
+        </div>      
+    </div>
+    {{> pagination}}
+  </div>
+</section>

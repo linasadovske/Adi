@@ -1,0 +1,50 @@
+---
+layout: default
+title: Cart address
+---
+<section class="section-cart py-5">
+  <div class="container">
+
+    <div class="row">
+      <main class="col">
+        {{> cart-nav}} 
+        <div class="row justify-content-around">
+             <!-- if neregsitruotas -->
+            <!-- <div class="col-md-6 col-lg-5">
+                {{> address-form}} 
+            </div> -->
+             <!--  else if regsitruotas -->
+             <div class="col-12">
+                <a href="address.html" class="btn btn-success mb-3" title="..."><i class="fas fa-plus-circle mr-3"></i>Pridėti naują</a>
+                <h2 class="title-20">
+                    Arba pasirinkite savo jau įvestą adresą: 
+                </h2>
+             </div>
+             <div class="col-md-6 address-method">
+                <div class="custom-control custom-radio address-radio">
+                    <input type="radio" id="customRadio1" name="addressRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio1">
+                        <h2 class="address-title">Adresas 2</h2>
+                        Tashkent city, <br>Street name, <br>Building 123, <br>House 321 <br>
+                        <a href="address.html" class="btn btn-light mt-3">Redaguoti</a>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6 address-method">
+                <div class="custom-control custom-radio address-radio">
+                    <input type="radio" id="customRadio2" name="addressRadio" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadio2">
+                        <h2 class="address-title">Adresas 289</h2>
+                        Tashkent city, <br>Street name, <br>Building 123, <br>Vilnius <br>
+                        <a href="address.html" class="btn btn-light mt-3">Redaguoti</a>
+                    </label>
+                </div>
+            </div>
+            
+             <!-- endif -->
+        </div>
+      </main>
+    </div>
+    {{> cart-footer}} 
+  </div>
+</section>

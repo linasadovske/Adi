@@ -1,0 +1,85 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+/// Regular font family
+/// @type List
+$text-font-stack: 'Montserrat', 
+'Open Sans',
+'Helvetica Neue Light',
+'Helvetica Neue',
+'Helvetica',
+'Arial',
+sans-serif !default;
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New',
+'DejaVu Sans Mono',
+'Bitstream Vera Sans Mono',
+'Monaco',
+monospace !default;
+/// Copy text color
+/// @type Color
+$text-color: rgb(62, 62, 62) !default;
+/// Main brand color
+/// @type Color
+$brand-color: rgb(229, 0, 80) !default;
+/// Outline color
+/// @type Color
+$border-outline-color: #f1f1f1;
+/// Light grey
+/// @type Color
+$light-grey: rgb(249, 249, 250) !default;
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(150, 150, 150) !default;
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: ( 'small': 320px, 'medium': 768px, 'large': 1024px, ) !default;
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+///   $base-url: '/assets/' !default;
+
+
+/// @type Color
+$primary: rgb(77, 107, 252) !default;
+$default: rgb(135, 217, 83) !default;
+$secondary: rgb(194, 201, 236) !default;
+
+
+$border-radius: 26px;
+$box-shadow-sm: 2px 2px 9px #EFEFEF;
+$border-radius-sm: .5rem;
+
+$circle-border-radius: 50%;
+/* electric blu */
+$electricblu: #4D6BFC;
+
+/* darker grey */
+$darkergrey: #969696;
+
+/* Green */
+$green: #87D953;
+
+/* grey */
+$grey: #F9F9FA;
+
+/* not black */
+$notblack: #3E3E3E;
+
+/* button grey */
+$buttongrey: #F3F3F3;
+
+$bggrey: #E5E5E5;
+
+$container-xl: 1300px;
+$container-xxl: 1800px;
+

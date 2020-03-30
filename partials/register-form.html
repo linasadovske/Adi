@@ -1,0 +1,29 @@
+<div class="card mx-auto">
+  <div class="card-body">
+    <h2 class="card-title title-25">Užsiregistruokite</h2>
+    <form>
+      <div class="form-group">
+        <input name="register-name" class="form-control form-control--grey" placeholder="Vardas Pavardė*" type="text" required>
+      </div>
+      <div class="form-group">
+        <input name="register-email" class="form-control form-control--grey" placeholder="El. pašto adresas*" type="email" required>
+      </div>
+      <div class="form-group">
+        <input name="register-pass" class="form-control form-control--grey" placeholder="Slaptažodis*" type="password" required>
+      </div>
+      
+      <div class="form-group">
+        <input name="register-tel" class="form-control form-control--grey" placeholder="Mobilaus tel. nr."
+          type="tel">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="privacyCheck">
+        <label class="form-check-label" for="privacyCheck">Sutinku su <a href="privacy.html" title="privatumo politika" target="_blank">privatumo politika.</a></label>
+      </div>
+      <div class="form-group mt-5">
+        <button type="submit" class="btn btn-default"> Registruokitės </button>
+      </div>
+      {{> social-login}} 
+    </form>
+  </div>
+</div>

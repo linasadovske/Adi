@@ -1,0 +1,56 @@
+---
+layout: default
+title: Orders
+---
+<section class="section-content account-page">
+  <div class="container">
+    <div class="row py-5">
+      <h1 class="font-weight-bold title col">Mano užsakymai</h1>
+    </div>
+
+    <div class="row flex-reverse-sm">
+      <aside class="col-md-3">
+            {{> account-menu}}        
+      </aside> 
+      <main class="col-md-9">
+          <div class="orders-info">
+              <div class="row head-row text-uppercase">
+                <div class="col-lg col-6">Užsakymo nr.</div>
+                <div class="col-lg col-6">Data</div>
+                <div class="col-lg col-6">Kaina</div>
+                <div class="col-lg col-6">Sąskaita</div>
+                <div class="col-lg col-6">Būsena</div>
+                <div class="col-lg d-none d-lg-block"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg col-6">191122-0002</div>
+                <div class="col-lg col-6">22.11.2019</div>
+                <div class="col-lg col-6">151 €</div>
+                <div class="col-lg col-6">
+                  <a href="#" title="Atsisiųsti PDF" target="_blank">Atsisiųsti</a>
+                </div>
+                <div class="col-lg col-6">Gautas apmokėjimas</div>
+                <div class="col-lg col-6">
+                  <a href="#" title="Sekti" target="_blank">Sekti</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg col-6">191030-0001</div>
+                <div class="col-lg col-6">30.10.2019</div>
+                <div class="col-lg col-6">151 €</div>
+                <div class="col-lg col-6">
+                  <a href="#" title="Atsisiųsti PDF" target="_blank">Atsisiųsti</a>
+                </div>
+                <div class="col-lg col-6">Laukiama apmokėjimo</div>
+                <div class="col-lg col-6">
+                  <a href="#" title="Sekti" target="_blank">Sekti</a>
+                </div>
+              </div>
+            </div>
+
+      </main> 
+    </div>
+
+  </div> 
+</section>

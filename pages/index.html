@@ -1,0 +1,40 @@
+---
+layout: default
+title: Home
+blue: true
+---
+<section class="section-home">
+    <div class="container">
+		<h1 class="font-weight-bold title">Kuo rūpinsiesi šiandien?</h1>
+    </div>
+    {{> categorieslist}}
+</section>
+
+
+{{> banners}}
+
+{{> favorites}}
+
+{{> latest-posts}}
+
+{{> brands}}
+
+<section class="section-home--about spacer">
+  <div class="container">
+    <div class="card align-items-center justify-content-between flex-md-row">
+      <div class="card-body d-flex flex-column align-items-start col-md-6">
+        <span class="posts--cat">Apie mus</span>
+        <h2 class="posts--title">
+          <a href="about.html" title="Patikimas augintinių šeimininkų partneris">Patikimas augintinių šeimininkų partneris</a>
+        </h2>
+        <div class="card-text">
+          <p>Evet.lt – elektroninė veterinarinių prekių parduotuvė ir kartu patikimas partneris augintinių šeimininkams. Parduotuvės pradžią paskatino vizija tokios elektroninės parduotuvės, kurioje būtų teikiamas holistinis požiūris į gyvūną ir jo gerovę.</p>
+        </div>        
+        <a href="about.html" class="btn btn-default mt-3" title="Skaityti">Skaityti</a>
+      </div>
+      <div class="col-md-5 text-center">
+        <img class="img-fluid" alt="..." title="..." src="{{root}}assets/img/about0us.png">
+      </div>
+    </div>
+  </div>
+</section>

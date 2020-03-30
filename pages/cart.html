@@ -1,0 +1,218 @@
+---
+layout: default
+title: Cart
+---
+<section class="section-cart py-5">
+  <div class="container-fluid">
+
+    <div class="row">
+      <main class="col-xl-8">
+        <h1 class="page-title">Krepšelis</h1>
+        {{> cart-nav}} 
+        <div class="card">
+          <div class="table-shopping-cart border-bottom">
+            <div class="top-cart-row row">
+              <div class="col-md-5 col-sm-4">Prekė</div>
+              <div class="col">Kiekis</div>
+              <div class="col">Vnt. kaina</div>
+              <div class="col">Suma</div>
+              <div class="class text-md-right col-1"> </div>
+            </div>
+            <div class="shopping-cart-content">
+              <div class="shopping-cart-item row">
+                <div class="col-md-5 col-sm-4 media">
+                  <img src="{{root}}assets/img/preke1.png" class="align-self-start mr-3 img-sm" alt="...">
+                  <div class="media-body">
+                    <a href="product.html" title="...">
+                      <h5 class="mt-0">Kačių maistas Brit Care Cat Daisy Weight 2kg</h5>
+                    </a>
+                    <div class="reference">Prekės kodas: 2217</div>
+                    <!-- if subscribe -->
+                    <select class="form-control cart-subscribe">
+                        <option> kas 1 sav. </option>
+                        <option> kas 2 sav. </option>
+                        <option> kas 3 sav. </option>
+                    </select>
+                    <!-- subscribe end -->
+                  </div>
+                </div>
+                <div class="form-group col-md col-6 mb-md-0">
+                  <div class="input-group input-spinner">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-light" type="button" id="button-minus"> − </button>
+                    </div>
+                    <input type="text" class="form-control" value="1">
+                    <div class="input-group-append">
+                      <button class="btn btn-light" type="button" id="button-plus"> + </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="price-wrap col-md col-6">
+                  <div class="price">1156.00 €</div>
+                  <small class="old-price"> 315.20 €</small>
+                </div>
+                <div class="price-wrap col">
+                  <div class="price font-weight-bold">1156.00 €</div>
+                </div> 
+                <div class="text-md-right col-2 col-md-1 cart-item--remove">
+                  <a href="#" class="btn" title="Remove"><i class="fas fa-times"></i></a>
+                </div>
+              </div>
+              <div class="shopping-cart-item row">
+                <div class="col-md-5 col-sm-4 media">
+                  <img src="{{root}}assets/img/preke2.png" class="align-self-start mr-3 img-sm" alt="...">
+                  <div class="media-body">
+                    <a href="product.html" title="...">
+                      <h5 class="mt-0">Pavadėlis</h5>
+                    </a>
+                    <div class="reference">Prekės kodas: 2217NN</div>
+                  </div>
+                </div>
+                <div class="form-group col-md col-6 mb-md-0">
+                  <div class="input-group input-spinner">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-light" type="button" id="button-minus"> − </button>
+                    </div>
+                    <input type="text" class="form-control" value="1">
+                    <div class="input-group-append">
+                      <button class="btn btn-light" type="button" id="button-plus"> + </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="price-wrap col-md col-6">
+                  <div class="price">0.90 €</div>
+                </div>
+                <div class="price-wrap col">
+                  <div class="price font-weight-bold">0.90 €</div>
+                </div> 
+                <div class="text-md-right col-2 col-md-1 cart-item--remove">
+                  <a href="#" class="btn" title="Remove"><i class="fas fa-times"></i></a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="alert border-bottom radius-0">
+            <p class="icontext mb-0"><i class="icon fa fa-truck"></i> Iki nemokamo pristatymo Jums trūksta:
+              <span class="text-success">XX.XX €</span></p>
+          </div>
+          <div class="card-body col">
+            <div class="row">
+              <div class="col-md-6">
+                <form class="needs-validation cart-coupon">
+                  <div class="form-group">
+                    <label>Nuolaidos kodas</label>
+                    <div class="input-group input-coupon">
+                      <input type="text" class="form-control" name="" placeholder="Įrašykite jį čia">
+                      <span class="input-group-append">
+                        <button class="btn btn-primary">Pritaikyti</button>
+                      </span>
+                      
+                    </div>
+                    <div class="valid-feedback">
+                      Nuolaidos kuponas pritaikytas!
+                    </div>
+                    <div class="invalid-feedback">
+                      Nuolaidos kuponas neteisingas arba nebegaliojantis.
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-6 cart-total">
+                <div class="row">
+                  <div class="col-6 col-md-7 col-xl-8">Suma be PVM</div>
+                  <div class="col-6 col-md-5 col-xl-4">687.89 €</div>
+                </div>
+                <div class="row">
+                  <div class="col-6 col-md-7 col-xl-8">PVM 21%</div>
+                  <div class="col-6 col-md-5 col-xl-4">2.53 €</div>
+                </div>
+                <div class="row">
+                  <div class="col-6 col-md-7 col-xl-8">Pritaikytos nuolaidos</div>
+                  <div class="col-6 col-md-5 col-xl-4">-0.19 €</div>
+                </div>
+                <div class="row">
+                  <div class="col-6 col-md-7 col-xl-8">Tarpinė suma</div>
+                  <div class="col-6 col-md-5 col-xl-4">7928.00 €</div>
+                </div>
+                <!-- <dl class="dlist-align">
+                  <dt>Total price:</dt>
+                  <dd class="text-right">USD 568</dd>
+                </dl>
+                <dl class="dlist-align">
+                  <dt>Discount:</dt>
+                  <dd class="text-right">USD 658</dd>
+                </dl>
+                <dl class="dlist-align">
+                  <dt>Total:</dt>
+                  <dd class="text-right  h5"><strong>$1,650</strong></dd>
+                </dl> -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-muted">
+                <p>Reikia pagalbos? Skambinkite <a href="tel:+37062348765" title="+37062348765">+370 684 75890</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <a href="cart-login.html" class="btn btn-default float-md-right"> Toliau </a>
+            <a href="#" class="btn btn-secondary"> Tęsti apsipirkimą </a>
+          </div>
+        </div>
+      </main>
+      <aside class="col-xl-3 offset-xl-1">
+        <div class="card mb-3 cart-gifts">
+          <div class="card-header px-0">
+            <h2 class="title-20">Išsirink 1 dovaną</h2>
+            <div class="text-muted">
+              <p class="mb-0">perkant už</p>
+              <p class="mb-0"><strong>40 €</strong> išsirink 1 dovaną</p>
+              <p class="mb-0"><strong>60 €</strong> išsirink 2 dovanas</p>
+            </div>
+          </div>
+          <div class="card-body row px-0">
+            <div class="mb-3 product-gift col-6 text-center">
+              <a href="product.html" target="_blank" title="...">
+                <img src="{{root}}assets/img/preke2.png" class="img-sm" alt="...">
+                <h3>Pavadinimas Pavadinimas</h3>
+              </a>
+              <button class="btn btn-light text-uppercase mt-3 btn-block ">Noriu</button>
+            </div>
+            <div class="mb-3 product-gift col-6 text-center">
+              <a href="product.html" target="_blank" title="...">
+                <img src="{{root}}assets/img/preke1.png" class="img-sm" alt="...">
+                <h3>Pavadinimas Pavadinimas Pavadinimas</h3>
+              </a>
+              <button class="btn btn-light text-uppercase mt-3 btn-block ">Noriu</button>
+            </div>
+            <div class="mb-3 product-gift col-6 text-center">
+              <a href="product.html" target="_blank" title="...">
+                <img src="{{root}}assets/img/preke1.png" class="img-sm" alt="...">
+                <h3>Pavadinimas </h3>
+              </a>
+              <button class="btn btn-light text-uppercase mt-3 btn-block ">Noriu</button>
+            </div>
+            <div class="mb-3 product-gift col-6 text-center">
+              <a href="product.html" target="_blank" title="...">
+                <img src="{{root}}assets/img/preke1.png" class="img-sm" alt="...">
+                <h3>Pavadinimas Pavadinimas</h3>
+              </a>
+              <button class="btn btn-light text-uppercase mt-3 btn-block ">Noriu</button>
+            </div>
+            
+            
+            
+          </div>
+          <div class="card-footer">
+              <a href="gifts.html" target="_blank" rel="noopener noreferrer">Pamatykite visas dovanėles</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+</section>

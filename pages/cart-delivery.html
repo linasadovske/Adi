@@ -1,0 +1,57 @@
+---
+layout: default
+title: Cart delivery
+---
+<section class="section-cart py-5">
+  <div class="container">
+
+    <div class="row">
+      <main class="col">
+        {{> cart-nav}} 
+        <div class="row">
+            <div class="col-md-6 delivery-method">
+                <div class="custom-control custom-radio delivery-radio">
+                    <input type="radio" id="customRadio1" name="deliveryRadio" class="custom-control-input" checked>
+                    <label class="custom-control-label" for="customRadio1">
+                        <h2 class="delivery-title">Pristatymas DPD kurjeriu</h2>
+                        <div class="delivery-details">Visoje Lietuvoje</div>
+                        <div class="text-primary delivery-price">Nemokamai!</div>
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-6 delivery-method">
+              <div class="custom-control custom-radio delivery-radio">
+                <input type="radio" id="customRadio2" name="deliveryRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">
+                    <h2 class="delivery-title">Pristatymas OMNIVA paštomate</h2>
+                    <div class="delivery-details">Visoje Lietuvoje</div>
+                    <div class="text-primary delivery-price">2 €</div>
+                    <div id="omnivalt_parcel_terminal_carrier_details">
+                        <select class="mt-3 form-control" name="omnivalt_parcel_terminal">
+                            <option value="">Pasirinkite siuntų terminalą</option>
+                            <optgroup label="Akademija">
+                                <option value="55534" class="omnivaOption">Kauno Akademijos EXPRESS MARKET paštomatas (naujas!) (Pilėnų g. 1, Akademija, Kauno raj.)</option>
+                            </optgroup>
+                            <optgroup label="Akmenė">
+                                <option value="55583" class="omnivaOption">Akmenės NORFA Daukanto paštomatas (naujas!) (S.Daukanto g. 7, Akmenė)</option>
+                            </optgroup>
+                            <optgroup label="Alytus">
+                                <option value="55507" class="omnivaOption">Alytaus IKI Juozapavičiaus paštomatas (naujas!) (A.Juozapavičiaus g. 13, Alytus)</option>
+                                <option value="55599" class="omnivaOption">Alytaus NORFA Jurgiškių paštomatas (naujas!) (Jurgiškių g. 2, Alytus)</option>
+                                <option value="88895" class="omnivaOption">Alytaus NORFA Topolių paštomatas (Topolių g. 1, Alytus)</option>
+                                <option value="88854" class="omnivaOption">Alytaus PC ARENA paštomatas (Naujoji g. 7E, Alytus)</option>
+                                <option value="88855" class="omnivaOption">Alytaus RIMI Pulko paštomatas (Pulko g. 53A, Alytus)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </label>
+              </div>
+            </div>
+
+        </div>
+        {{> cart-total}} 
+      </main>
+    </div>
+    {{> cart-footer}} 
+  </div>
+</section>

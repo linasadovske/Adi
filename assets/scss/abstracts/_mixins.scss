@@ -1,0 +1,109 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+/// Event wrapper
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+
+@mixin on-event($self: false) {
+  @if $self {
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+
+  @else {
+
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+@mixin absolute-center {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+@mixin placeholder {
+  &.placeholder {
+    @content
+  }
+
+  &:-moz-placeholder {
+    @content
+  }
+
+  &::-webkit-input-placeholder {
+    @content
+  }
+}
+
+@mixin odd() {
+  &:nth-child(odd) {
+    @content
+  }
+}
+
+@mixin even() {
+  &:nth-child(even) {
+    @content
+  }
+}
+
+@mixin sidebar() {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: $white;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
+  padding: 2rem;
+  transform: translateX(100%);
+  transition: all .5s;
+  overflow-y: scroll;
+  width: 95vw;
+  @include media-breakpoint-up(md) {
+    width: 75vw;
+    padding: 2rem 4rem;
+
+  }
+  @include media-breakpoint-up(lg) {
+    width: 50vw;
+  }
+  @include media-breakpoint-up(xl) {
+  width: 30vw;
+  }
+  
+}
+@mixin greyformcontrol() {
+  background-color: $buttongrey;
+    font-weight: 600;
+    line-height: 155%;
+    text-align: center;
+    border-color: $buttongrey;
+    color: $black;
+}
+@mixin arrowdown() {
+  background-image: url(../img/arrow_down.svg);
+  background-size: 1.25rem;
+  background-repeat: no-repeat;
+  background-position: 95% 55%;
+  padding-right: 2rem;
+}

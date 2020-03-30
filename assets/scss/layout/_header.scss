@@ -1,0 +1,262 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.navbar {
+  @include media-breakpoint-up(sm) {
+    padding: .5rem 2rem;
+  }
+}
+
+.fixed-top {
+  border-bottom: 1px solid $border-outline-color;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+  color: $text-color;
+
+  @include on-event {
+    color: $primary;
+  }
+}
+
+.menu-top {
+  align-items: center;
+  margin-bottom: 2rem;
+
+  .nav-link {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: $notblack;
+  }
+}
+
+.nav-bar--right .navbar-toggler[aria-expanded=true] i:before {
+  content: "\f00d";
+}
+
+.dropdown-item {
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 104.5%;
+  letter-spacing: -0.04em;
+  color: $notblack;
+
+  @include on-event {
+    color: $primary;
+    background-color: transparent;
+  }
+}
+
+.nav-link {
+
+  @include on-event {
+    &:not(.dropdown-toggle) {
+      padding-left: 1rem;
+    }
+
+    transition: all .2s;
+  }
+}
+
+.dropdown-menu,
+.dropdown-toggle::after {
+  border-radius: 0;
+  border: none;
+}
+
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+
+.cart-count {
+  font-style: normal;
+  font-weight: 500;
+  font-size: .75rem;
+  line-height: 123%;
+  letter-spacing: -0.04em;
+  // position: absolute;
+}
+
+.shopping-cart-link {
+  position: relative;
+  padding: 0.375rem 0.75rem;
+}
+
+.nav-bar--right {
+
+  i {
+    color: $notblack;
+
+    @include on-event {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+
+  a {
+    color: $notblack;
+
+    @include on-event {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+
+}
+
+.search-form {
+  .form-control {
+    opacity: 0;
+    display: none;
+  }
+
+  // i {
+  //   padding: .25rem .75rem;
+  // }
+
+}
+
+.navbar {
+  i {
+    font-size: 1.5rem;
+  }
+}
+
+// .nav-link--b2b {
+//   padding-left: 0;
+//   padding-right: 0;
+//   font-size: 18px;
+//   margin-top: 1rem;
+// }
+.navbar-brand {
+  svg {
+    width: 150px;
+    .st0{fill:#4d6bfc;}
+  }
+}
+// blue header
+.bg-primary {
+  &.navbar {margin-bottom: -1px;}
+  .navbar-brand {
+   
+    img {
+      filter: brightness(0) invert(1);
+
+      @include media-breakpoint-down(md) {
+        max-width: 120px;
+      }
+    }
+    svg {
+      .st0{fill:#ffffff;}
+    }
+  }
+
+  .cart-count,
+  .nav-bar--right {
+    color: $white;
+  }
+
+  i {
+    color: $white;
+
+    @include on-event {
+      color: $notblack;
+    }
+  }
+}
+
+.sidenav,
+#navbars-main-menu {
+  width: 95vw;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  @include media-breakpoint-up(md) {
+    width: 75vw;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 50vw;
+  }
+  @include media-breakpoint-up(xl) {
+  width: 30vw;
+  }
+}
+
+.sidenav {
+  &.show {
+    .cart-sidebar-content {
+      transform: translateX(0);
+    }
+
+  }
+}
+#navbars-main-menu {
+  
+  .primary-menu {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: start;
+    @include sidebar();
+  }
+
+
+  &.show {
+    .primary-menu {
+      transform: translateX(0);
+    }
+
+  }
+
+}
+
+.secondary-menu {
+  a {
+    color: $text-color;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-right: 0;
+    padding-left: 0;
+
+    @include on-event {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 998;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+/* display .overlay when it has the .active class */
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+
+@media(min-width: 768px) {
+  .dropdown-menu {
+    margin-top: 0; // fixes closing on slow mouse transition
+  }
+}
+
+.cart-sidebar--actions {
+  .btn {
+    padding: .75em .5em;
+  }
+}

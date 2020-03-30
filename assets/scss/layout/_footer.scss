@@ -1,0 +1,112 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+    background-color: $primary;
+    color: $white;
+    margin-top: 5rem;
+    a {
+        color: $white;
+        @include on-event {
+            text-decoration: none;
+            color: $secondary;
+        }
+    }
+}
+.footer-logo {    
+    @include media-breakpoint-down(md) {
+        img {
+            margin: .5rem 0;
+        }
+      }
+}
+.footer-menu {
+    margin-bottom: 2em;
+    .nav-link {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: -0.04em;
+        
+        @include media-breakpoint-up(md) {
+            font-size: 18px;
+          }
+    }
+   
+}
+.footer-menu--secondary {
+    a {
+        color: $secondary;
+        font-weight: 500;
+        font-size: 1rem;
+        padding: .5rem 1rem;
+        display: block;
+        @include on-event {
+            color: $white;
+        }
+    }
+    li {
+        @include media-breakpoint-up(md) {
+            display: inline-block;
+            &:not(:last-child) {
+                margin-right: 0.5rem;
+            }
+          }
+    }
+}
+.news-form {
+    .section-title {
+        font-weight: 600;
+        padding-top: 0;
+        font-size: 25px;
+        @include media-breakpoint-up(md) {
+            font-size: 35px;
+        }
+    }
+    .form-text {
+        color: $secondary; 
+    }
+    .custom-control-label {
+        color: $secondary; 
+        &:before {
+            background-color: transparent;
+            border-radius: 0;
+        }
+    }
+    .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: $secondary;
+        border-color: $secondary;
+    }
+    .btn {
+        background-color: $light-grey;
+        border: 1px solid #ced4da;
+        border-left: none;
+        i {
+            color: $default;
+        }
+        @include on-event {
+            i {
+                color: $primary;
+            }
+        }
+    }
+    .form-control {
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: -0.02em;
+        color: $mid-grey;
+        background-color: $light-grey;
+        height: calc(1.5em + 1.5rem + 2px);
+        padding: 0.375rem 1.25rem;
+
+        @include placeholder {
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: -0.02em;
+            color: $mid-grey;
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 1rem;
+      }
+    }

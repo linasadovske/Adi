@@ -1,0 +1,329 @@
+---
+layout: default
+title: Product
+---
+<section class="section-product-single">
+  <div class="container">
+    <div class="row spacer justify-content-between flex-reverse-sm">
+      <div class="col-md-5 col-lg-4 product-content">
+        <a href="#" title="" class="grey-link">Kačių maistas</a>
+        <h1 class="page-title title">Brit Care Cat Daisy Weight 2kg.</h1>
+        <div class="reference">Prekės kodas: 2217</div>
+        <a href="#" class="btn wishlist-btn">
+          <i class="wishlist-icon"></i> 
+          <span class="text">
+            <!-- Add to wishlist -->
+            Pridėti prie patikusių
+          </span>
+        </a>
+        <div class="short-desc">
+          Super Premium klasės kačių maistas Brit Care Cat Daisy Weight. Alergijos nesukelianti kalakutienos ir ryžių
+          formulė viršsvorį turinčioms katėms. Visavertis pašaras. NAUJA SUDĖTIS
+        </div>
+        <div class="price-wrap d-flex align-items-center my-5">
+          <div class="old-price">8.19 €</div>
+          <div class="price">7.60 €</div>
+
+          <div class="res-circle discount">
+                <span class="circle-txt">-99 %</span>
+            </div>            
+        </div>        
+<!-- if quantity > 0 -->
+        <form>
+          <div class="collapse" id="collapseSubscribe">
+            <div class="mb-3">
+              <h3 class="heading-success text-uppercase">Prenumerata</h3>
+              <div class="text-muted">
+                <p>
+                  Pasirinkite pakuotės dydį ir kas kiek laiko Jums bus reikalingas papildymas.
+                </p>
+              </div>
+              <select class="form-control">
+                <option> kas 1 sav. </option>
+                <option> kas 2 sav. </option>
+                <option> kas 3 sav. </option>
+            </select>
+  
+            </div>
+          </div>
+            <div class="form-row">
+                <div class="form-group col-6">
+                <select class="form-control">
+                        <option> 1 kg </option>
+                        <option> 2 kg </option>
+                        <option> 3 kg </option>
+                    </select>
+                </div>
+                <div class="form-group col-6">
+                <div class="input-group mb-3 input-spinner">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-light" type="button" id="button-minus"> − </button>
+                        
+                    </div>
+                    <input type="text" class="form-control" value="1">
+                    <div class="input-group-append">
+                        <button class="btn btn-light" type="button" id="button-plus"> + </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-block btn-default text-uppercase">Į krepšelį</a>
+
+            <button class="btn btn-block btn-outline-default text-uppercase" type="button" data-toggle="collapse" data-target="#collapseSubscribe" aria-expanded="false" aria-controls="collapseSubscribe">
+              Prenumeruoti
+            </button>
+            <a href="subscription.html" title="Kaip veikia prenumerata?" target="_blank" class="text-muted small text-center btn btn-block">Kaip veikia prenumerata?</a>
+        </form>
+        
+<!-- else -->
+<!-- laikinai paslepta -->
+  <!-- <div class="mb-3">
+    <h3 class="text-primary f-20 font-weight-bold">Šiuo metu prekės neturime.</h3>
+    <div class="text-muted">
+      <p>
+        Mielai informuosime, kai prekė vėl bus prekyboje
+      </p>
+    </div>
+  </div>
+
+<button class="btn btn-block btn-primary text-uppercase mb-3" data-toggle="modal" data-target="#oosModal">
+  Gauti pranešimą
+</button> -->
+<!-- Modal -->
+<div class="modal fade" id="oosModal" tabindex="-1" role="dialog" aria-labelledby="oosModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- before submit -->
+        <form class="px-md-5 py-md-3">
+          <h2 class="title-20">Informuotume Jus, kai prekė vėl bus prekyboje</h2>
+          <div class="form-group mt-3">
+            <input type="text" id="oos_customer_email" name="customer_email" placeholder="El. pašto adresas" class="form-control form-control--grey"  />
+          </div>
+          <button type="submit" class="btn btn-default mb-3" rel="nofollow">Patvirtinti</button>
+
+          <div class="text-muted mt-3">
+            <p>
+              Daugiau informacijos apie jūsų duomenų naudojimą ir apie tai, kaip galite pasinaudoti savo teisėmis, rasite mūsų <a href="privacy.html" target="_blank">privatumo politikoje</a>.
+            </p>
+          </div>
+        </form>
+        <!--  after submit, if success -->
+        <div class="px-md-5 py-md-3">
+          <h2 class="title-20">Ačiū, užsakymas pateiktas.</h2>
+          <div class="text-muted mt-3">
+            <p>
+              Laukite pranešimo savo elektroninio pašto dėžutėje, kai prekė vėl bus prekyboje..
+            </p>
+          </div>
+        </div>
+        <!-- endif -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- endif -->
+      </div>
+      <div class="col-md-6 img-container">
+        <div class="swiper-container swiper-img">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="{{root}}assets/img/preke.png" alt="..." title="..."></div>
+            <div class="swiper-slide"><img src="{{root}}assets/img/preke2.png" alt="..." title="..."></div>
+            <div class="swiper-slide"><img src="{{root}}assets/img/preke1.png" alt="..." title="..."></div>
+            <div class="swiper-slide"><img src="{{root}}assets/img/preke2.png" alt="..." title="..."></div>
+          </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="spacer product-information">
+    <nav class="container">
+      <div class="nav nav-tabs info-tabs col-12 col-lg-8 col-xl-6 nav-fill" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-info-tab" data-toggle="tab" href="#nav-info" role="tab"
+          aria-controls="nav-info" aria-selected="true">Informacija</a>
+        <a class="nav-item nav-link" id="nav-inci-tab" data-toggle="tab" href="#nav-inci" role="tab"
+          aria-controls="nav-inci" aria-selected="false">Sudėtis</a>
+        <a class="nav-item nav-link" id="nav-feed-tab" data-toggle="tab" href="#nav-feed" role="tab"
+          aria-controls="nav-feed" aria-selected="false">Maitinimo normos</a>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <!-- <div class="container"> -->
+        <div class="tab-pane fade show active" id="nav-info"
+          role="tabpanel" aria-labelledby="nav-info-tab">
+          <p>
+            Kačių maistas Brit Care Cat Daisy Weight, sukurtas specialiai viršsvorį turinčioms katėms, pasižymi tokiomis
+            savybėmis, turinčiomis įtakos kačių sveikatai ir būklei:
+          </p>
+
+          <ul>
+            <li>
+              Mažai riebalų (10%) ir didelis kiekis proteinų (40%) padeda išvengti svorio padidėjimo.
+            </li>
+            <li>
+              Sudėtyje esantis L-karnitinas padeda mažinti svorį.
+            </li>
+            <li>
+              Smiltyninis gyslotis, obuoliai, runkelių skaidulos pagerina virškinimo procesą.
+            </li>
+            <li>
+              Šaltalankių ekstraktas, kuris pasižymi priešuždegiminėmis sąvybėmis užtikrina sveiką inkstų ir šlapimo
+              sistemos veiklą.
+            </li>
+            <li>
+              Subalansuoti mineralai.
+            </li>
+            <li>
+              Be kukurūzų, sojos, kviečių.
+            </li>
+          </ul>
+
+          <p>
+            Gamintojas: VAFO PRAHA s.r.o.
+          </p>
+          <h2>Features</h2>
+          <h3>Features</h3>
+          <h4>Features</h4>
+          <h5>Features</h5>
+          <h6>Features</h6>
+          <ul class="list-check">
+            <li>Best performance of battery</li>
+            <li>5 years warranty for this product</li>
+            <li>Amazing features and high quality</li>
+            <li>Best performance of battery</li>
+            <li>5 years warranty for this product</li>
+            <li>Amazing features and high quality</li>
+          </ul>
+
+        </div>
+        <div class="tab-pane fade" id="nav-inci" role="tabpanel"
+          aria-labelledby="nav-inci-tab">
+          <p>
+            Dehidratuota kalakutiena 26%, ryžiai, dehidratuota vištiena 12%, vištiena be kaulų 10%, višienos riebalai (konservuoti tokoferoliais), džiovinti obuoliai, ryžių sėlenos, burokėlių tyrė,  alaus mielės, vištienos kepenys 2%, lašišų aliejus, gyslotis 200mg/kg, manano-oligosacharidai 155mg/kg, frukto-oligosacharidai 125 mg/kg, jukos šidigeros ekstraktas 85mg/kg, šaltalankis 50mg/kg.
+          </p>
+          <b>Sudėties analizė</b>
+          <p>
+            žali baltymai 40%, riebalų kiekis 10%, žalia ląsteliena 6,2%, žali pelenai 5,6%, drėgmė 10%, kalcis 1.6%, fosforas 1.2%, natris 0.2%, magnis 0.07%.
+          </p>
+          <b>Priedai</b>
+          <p>
+            Vitaminas A (E672) 22 500TV, vitaminas D3 (E671) 900TV, vitaminas E (3a700) 650mg, vitaminas C (E300) 300 mg, taurinas 2300 mg, cholino chloridas 2100mg, L-karnitinas 65mg, nikotininė rūgštis 40 mg, biotinas 1,8 mg, cinkas (E6) 150mg, manganas (E5) 56 mg, geležis (E1) 47mg, varis (E4) 11mg, jodas (E2) 3,7 mg, selenas (E8) 0,23 mg, DL-metioninas (3.1.1.) 13mg, argininas (3c3.6.1) 11mg, L-lizinas (3.2.3.) 9 mg, natrio heksametafosfatas (E452i) 710 mg. Omega 3:0,17 %, omega 6:1.1%.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="nav-feed" role="tabpanel"
+          aria-labelledby="nav-feed-tab">
+          <p>
+            Ėdalą galima duoti sausą arba šiek tiek sudrėkintą šiltu vandeniu. Užtikrinkite, kad visada būtų šviežio vandens. Ėdalo kiekis gali skirtis, atsižvelgiant į tokius veiksnius kaip amžius ir aktyvumo lygis. Laikykitės rekomenduojamo dienos ėdalo kiekio, nurodyto lentelėje. Kai savo katinui pradedate duoti naują ėdalą, sumaišykite jį su ankstesniu ėdalu ir palaipsniui per kelias dienas didinkite naujo ėdalo porciją. Laikyti sausoje ir vėsioje vietoje.
+          </p>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>                  
+                  <th scope="col">Katės svoris (kg)</th>
+                  <th scope="col">Kiekis (g) išlaikant svorį </th>
+                  <th scope="col">Kiekis (g) mažinant svorį</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>    
+                  <td>2-3</td>
+                  <td>3-5</td>
+                  <td>5-7</td>
+                </tr>
+                <tr>      
+                  <td>40-60</td>
+                  <td>60-85</td>
+                  <td>85-110</td>
+                </tr>
+                <tr>                  
+                  <td>35-50</td>
+                  <td>50-70</td>
+                  <td>70-95</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+          <h5>Parameters</h5>
+          <dl class="row">
+            <dt class="col-sm-3">Display</dt>
+            <dd class="col-sm-9">13.3-inch LED-backlit display with IPS</dd>
+
+            <dt class="col-sm-3">Processor</dt>
+            <dd class="col-sm-9">2.3GHz dual-core Intel Core i5</dd>
+
+            <dt class="col-sm-3">Camera</dt>
+            <dd class="col-sm-9">720p FaceTime HD camera</dd>
+
+            <dt class="col-sm-3">Memory</dt>
+            <dd class="col-sm-9">8 GB RAM or 16 GB RAM</dd>
+
+            <dt class="col-sm-3">Graphics</dt>
+            <dd class="col-sm-9">Intel Iris Plus Graphics 640</dd>
+          </dl>
+
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+
+</section>
+<section class="container reassurance-block">
+  <div class="row">
+    <a class="col-6 col-lg-3" href="about.html" title="Aukšta kokybė" target="_blank">
+      <article class="card card-body">
+        <figure class="text-center">
+          <img src="{{root}}assets/img/quality.svg" alt="Aukšta kokybė" title="Aukšta kokybė">
+          <figcaption class="pt-4">
+          <h5 class="title">Aukšta kokybė</h5>
+          </figcaption>
+        </figure> 
+      </article> 
+    </a>
+    <a class="col-6 col-lg-3"  href="payment.html" title="Saugus atsiskaitymas" target="_blank">
+      <article class="card card-body">
+        <figure class="text-center">
+          <img src="{{root}}assets/img/security.svg" alt="Saugus atsiskaitymas" title="Saugus atsiskaitymas">
+          <figcaption class="pt-4">
+          <h5 class="title">Saugus atsiskaitymas</h5>
+          </figcaption>
+        </figure> 
+      </article> 
+    </a> 
+    <a class="col-6 col-lg-3" href="delivery.html" title="Nemokamas pristatymas nuo 30€" target="_blank">
+      <article class="card card-body">
+        <figure class="text-center">
+          <img src="{{root}}assets/img/delivery.svg" alt="Nemokamas pristatymas nuo 30€" title="Nemokamas pristatymas nuo 30€">
+          <figcaption class="pt-4">
+          <h5 class="title">Nemokamas pristatymas nuo 30€</h5>
+          </figcaption>
+        </figure> 
+      </article> 
+    </a> 
+    <a class="col-6 col-lg-3" href="gifts.html" title="Dovana perkantiems už 35€" target="_blank">
+      <article class="card card-body">
+        <figure class="text-center">
+          <img src="{{root}}assets/img/gift.svg" alt="Dovana perkantiems už 35€" title="Dovana perkantiems už 35€">
+          <figcaption class="pt-4">
+          <h5 class="title">Dovana perkantiems už 35€</h5>
+          </figcaption>
+        </figure> 
+      </article> 
+    </a> 
+    </div>
+</section>
+<section class="container-fluid section-product-footer">
+  {{> product-footer}}
+</section>
