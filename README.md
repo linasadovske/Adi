@@ -1,2 +1,2 @@
-# lina.sadovske-gmail.com
+# Adi project
 adi
